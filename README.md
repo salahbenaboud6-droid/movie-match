@@ -396,5 +396,6 @@ Correspondance propriétés → tests :
 | P15 : Champs requis | Générer recommandations, vérifier présence titre/genres/score arrondi |
 | P16 : Round-trip JSON | Générer profil, save() + load(), vérifier équivalence |
 | P17 : Ids invalides ignorés | Générer JSON avec ids hors catalogue, vérifier absence dans get_films() |
-benaboud salah eddine 
+ 
 <img width="1918" height="1020" alt="image" src="https://github.com/user-attachments/assets/55f661b8-63fc-48e5-b95d-564574fd2a77" />
+benaboud salah eddine
