@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineMatch — Recommandation de Films</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">🎬 CineMatch</div>
+    <p class="tagline">Sélectionne tes films préférés, découvre les suivants.</p>
+  </header>
+
+  <main>
+
+    <!-- Catalogue -->
+    <section class="section" id="catalogue-section">
+      <h2>Catalogue <span id="selected-count">(0 / 10 sélectionnés)</span></h2>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Rechercher un film..." />
+      </div>
+      <div class="genre-filters" id="genre-filters"></div>
+      <div class="movie-grid" id="movie-grid"></div>
+    </section>
+
+    <!-- Bouton recommander -->
+    <div class="recommend-bar">
+      <button id="recommend-btn" disabled>✨ Obtenir mes recommandations</button>
+      <button id="reset-btn">🔄 Réinitialiser</button>
+    </div>
+
+    <!-- Recommandations -->
+    <section class="section" id="results-section" hidden>
+      <h2>Recommandations pour toi</h2>
+      <div class="movie-grid" id="results-grid"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Inspiré de Netflix · Algorithme de similarité Jaccard sur les genres</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
